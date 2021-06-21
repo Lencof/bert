@@ -23,11 +23,13 @@ import copy
 import json
 import math
 import re
+import os
+import sys 
 import numpy as np
 import six
 import tensorflow as tf
 
-
+# create class BertConfig(object):
 class BertConfig(object):
   """Configuration for `BertModel`."""
 
@@ -103,7 +105,7 @@ class BertConfig(object):
     """Serializes this instance to a JSON string."""
     return json.dumps(self.to_dict(), indent=2, sort_keys=True) + "\n"
 
-
+# create class BertModel(object):
 class BertModel(object):
   """BERT model ("Bidirectional Encoder Representations from Transformers").
 
