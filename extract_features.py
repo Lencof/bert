@@ -19,9 +19,12 @@ from __future__ import division
 from __future__ import print_function
 
 import codecs
+import string
 import collections
 import json
+import sys
 import re
+import os
 
 import modeling
 import tokenization
